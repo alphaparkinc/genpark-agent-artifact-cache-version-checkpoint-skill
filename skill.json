@@ -1,0 +1,35 @@
+{
+  "name": "genpark-agent-artifact-cache-version-checkpoint-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - High-throughput agent artifact cache, intermediate tensor store & snapshot checkpointer.",
+  "author": "genpark",
+  "category": "operations",
+  "tags": [
+    "artifact-cache",
+    "checkpoint-manager",
+    "snapshot-storage",
+    "agent-memory",
+    "ph-august-top"
+  ],
+  "inputs": {
+    "checkpoint_tag": {
+      "type": "string"
+    },
+    "artifact_payload_bytes": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "checkpoint_id": {
+      "type": "string"
+    },
+    "cache_hit_latency_ms": {
+      "type": "integer"
+    },
+    "snapshot_stored": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
